@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StudentForm</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <div class="section-1">
+            <div id="data">
+                <label for="number">Enter your Roll-No.</label><br>
+                <input type="number" id="number" placeholder="Enter your roll-no" class="round" required><br><br>
+
+                <label for="name" class="name">Enter your Name.</label><br>
+                <input type="text" id="name" placeholder="Enter your name" class="round" required><br><br>
+
+                <label for="subject" class="subject">Enter your Subject.</label><br>
+                <input type="text" id="subject" placeholder="Enter your subject" class="round" required><br>
+
+                <label for="storage" class="store"></label><br>
+                <select name="storage" id="storage" class="round1">
+                    <option value="localStorage">localStorage</option>
+                    <option value="SessionStorage">SessionStorage</option>
+                    <option value="cookies">cookies</option>
+                </select><br><br>
+                <button type="button" class="submit" onclick="submitData()">Submit</button>
+            </div>
+        </div>
+        <div class="section-2" id="output-box"></div>
+        <script src="JS/index.js"></script>
+    </body>
+</html> 

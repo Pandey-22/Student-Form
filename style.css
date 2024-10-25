@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    margin: 0px 0px;
+    height: 100vh;
+    width: 100vw;
+}
+.section-1,
+.section-2 {
+    flex: 1;
+    text-align: center;
+}
+.section-1 {
+    background: rgb(23, 17, 48);
+    border: 1px solid wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-2 {
+    background: rgb(23, 17, 48);
+    color: white;
+    border: 1px solid wheat;
+}
+#data{
+    padding: 80px 0px;
+    color: white;
+    font-size: 20px;
+}
+.round{
+    border-radius: 8px;
+    height: 20px;
+    border: none;
+    padding: 5px;
+    outline: none;
+    width: 240px;
+}
+.name{
+    margin-left: -20px;
+}
+.subject{
+    margin-left: -10px;
+}
+.round1 {
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    border: none;
+    outline: none;
+    margin-right: 95px;
+    font-size: 15px;
+}
+.submit{
+    background-color: rgb(253, 14, 14);
+    border-radius: 5px;
+    height: 35px;
+    width: 90px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 165px;
+}
+label{
+    margin-right: 80px;
+}
+button{
+    background-color: rgb(253, 14, 14);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 15px;
+    outline: none;
+    text-transform: capitalize;
+}
+.data-item {
+    margin-left: 350px;
+    padding: 10px;
+    text-align: left;
+    line-height: 1.5;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .section-1,
+    .section-2 {
+        margin: 10px 0;
+    }
+    .data-item {
+        margin-left: 0;
+        text-align: center;
+    }
+    .submit,
+    .round1 {
+        margin-right: 0;
+        width: 80%;
+    }
+    label {
+        margin-right: 10px;
+    }
+}
